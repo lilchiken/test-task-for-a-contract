@@ -41,6 +41,7 @@ def test_auth_using_login_pass(anon_client: 'APIClient', user_with_password: 'Us
 # Второй - написать рабочие тесты исходя из ресурсов проекта.
 # Я решил идти по обоим :) Тесты представлены, соответственно списку выше.
 
+
 @pytest.mark.django_db
 def test_user_flow(admin_client: 'APIClient', anon_client: 'APIClient'):
     """Тесты по TODO."""
@@ -93,7 +94,6 @@ def test_user_flow(admin_client: 'APIClient', anon_client: 'APIClient'):
         response = admin_client.delete('/api/v1/users/{}/'.format(user.get('id')))
 
         assert response.status_code == 204
-
 
 
 @pytest.mark.django_db
