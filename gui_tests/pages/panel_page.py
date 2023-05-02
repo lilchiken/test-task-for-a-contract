@@ -66,11 +66,15 @@ class PanelPage(BasePage):
 
         assert self.wait.until(
             EC.presence_of_element_located(
-                (By.XPATH, '//*[@id="root"]/div[1]/main/div/div/div[2]/table/tbody/tr[1]/td[2]')
+                (
+                    By.XPATH,
+                    '//*[@id="root"]/div[1]/main/div/div/div[2]/table/tbody/tr[1]/td[2]'
+                )
             ),
             "Элемент не появился на странице"
         )
 
         assert result == self.driver.find_element(
-            By.XPATH, '//*[@id="root"]/div[1]/main/div/div/div[2]/table/tbody/tr[1]/td[2]'
+            By.XPATH,
+            '//*[@id="root"]/div[1]/main/div/div/div[2]/table/tbody/tr[1]/td[2]'
         ).text, "Элемент не появился на странице"

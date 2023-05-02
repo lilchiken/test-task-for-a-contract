@@ -31,7 +31,6 @@ class TestMain(BaseTest):
         yield self.path, self.name_file
         self.path.unlink()
 
-
     def test_title(self, load_pages):
         self.page.check_title('Application Platform')
 
