@@ -24,7 +24,7 @@ class TestMain(BaseTest):
                 },
                 'password': {
                     'path': '//*[@id="root"]/div[1]/div/main/form/div[2]/div/div/input',
-                    'value': 'starter1234' # 5 
+                    'value': 'starter12345'
                 },
                 'button': {
                     'path': '//*[@id="root"]/div[1]/div/main/form/div[4]/button'
