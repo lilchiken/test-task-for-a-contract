@@ -22,3 +22,6 @@ yarn.lock
 api/media/*
 package-lock.json
 api/files/*
+.venv
+.DS_Store
+/venv
