@@ -12,11 +12,11 @@
 5. Развернуть виртуальное окружение
 `python3 -m venv venv`
 6. Активировать окружение
-- MacOS / Linux__
-`source venv/bin/activate`
-- MS__
-`Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`__
-`.venv\Scripts\Activate.ps1`
+- MacOS / Linux
+- `source venv/bin/activate`
+- MS
+- `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
+- `.venv\Scripts\Activate.ps1`
 7. Установить все модули
 `pip install -r requirements.txt`
 8. Запустить тесты
